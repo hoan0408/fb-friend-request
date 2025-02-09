@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gray: #dfdee6;
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+    background-color: #000;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
+.container{
+    max-width: 800px;
+    height: 417px;
+    width: 100%;
+    margin : 0 auto;
+    margin-top: 70px;
+    padding : 0 10px;
+    background-color: rgba(253, 254, 255, 0.975);
+}
+
+.header{
+    
+    padding-top:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h4{
+    font-weight: 700;
+    color: rgb(14, 14, 12);
+}
+
+.sets{
+    cursor: pointer;
+}
+
+.set{
+    margin-right: 15px;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    /* display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    position: relative;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.set:before,
+.set:after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 100%;
+    position:absolute;
+    cursor:pointer;
+}
+
+.set:before{
+    transform: translateX(-7px);
+}
+
+.set:after{
+    transform: translateX(7px);
+}
+
+.inform{
+    
+    height: 300px;
+    position: relative;
+}
+
+.boxs
+{
+    display: flex;
+    gap:25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.next{
+    width: 44px;
+    height: 43px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.next:hover{
+    background-color: #beb8b8dc;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    background-color: white;
+    gap: 5px;
+    border-radius: 5%;
+    overflow: hidden;
+    padding-bottom: 10px;
+    /* tạo ra bóng của thẻ 3 chi so x là theo chiều ngang y theo chiều dọc và độ mờ*/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.mutual-friend{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.img1{
+    width: 100%;
+}
+.img2{
+    width: 100%;
+}
+.circle
+{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.box h4{
+    padding-top: 7px;
+    padding-left: 5px;
+    font-size: 17px;
+}
+
+.box h4:hover{
+    text-decoration: underline;
+}
+
+.mutual-friend{
+    padding-left: 5px;
+}
+
+.mutual-friend h5{
+    font-size: 14px;
+}
+
+
+button{
+    width: 94%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.confirm,
+.delete{
+    border-radius: 7px;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: none;
+    cursor: pointer;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.confirm:hover
+{
+    background-color: rgb(104, 146, 237);
+}
+
+.delete:hover{
+    background-color: #d4d6d7;
+}
+
+.confirm{
+    background-color: #bed2f3;
+    color:rgb(8, 21, 164);
+}
+
+.delete {
+    background-color: #e2e5e9d3;
+    color: #000;
+}
+
+.footer{
+    margin-top: 23px;
+    text-align: center;
+    background-color: white;
+    height: 39px;
+    align-items: center;
+}
+
+.footer-a
+{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer a{
+    width: 10%;
+    display: grid;
+    text-decoration: none;
+    font-size: 18px;
+    color: #0d3a82;
+    font-weight: bold;
+}
+
+
+.clicked{
+    background-color: rgb(41, 221, 95);
+}
