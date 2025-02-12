@@ -20,7 +20,7 @@ img{
 
 .container{
     max-width: 800px;
-    height: 417px;
+    height: 440px;
     width: 100%;
     margin : 0 auto;
     margin-top: 70px;
@@ -78,9 +78,14 @@ img{
 }
 
 .inform{
-    
-    height: 300px;
+    display: flex;
+    max-height: 333px;
     position: relative;
+    overflow-y: auto;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding-bottom: 14px;
+    transition: transform 0.3s ease;
 }
 
 .boxs
@@ -89,15 +94,16 @@ img{
     gap:25px;
     margin-top: 10px;
     margin-left: 10px;
+    max-height: 100%;
 }
 
-.next{
+.next-right{
     width: 44px;
     height: 43px;
     border-radius: 100%;
     background-color: white;
     position: absolute;
-    top: 120px;
+    top: 40%;
     right: 10px;
     display: flex;
     justify-content: center;
@@ -105,9 +111,30 @@ img{
     cursor: pointer;
 }
 
-.next:hover{
+.next-left{
+    width: 44px;
+    height: 43px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   opacity: 0;
+}
+
+.open-left{
+   opacity: 1;
+}
+.next-right:hover,
+.next-left:hover{
     background-color: #beb8b8dc;
 }
+
+
 
 .box{
     display: flex;
